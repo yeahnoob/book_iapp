@@ -1,0 +1,8 @@
+[package]
+name = "book_iapp"
+version = "0.1.0"
+authors = ["Xanadu Zhang <yeahnoob@buaa.edu.cn>"]
+
+[dependencies]
+clap = "^2.0"
+rcalc = "^0.1"
