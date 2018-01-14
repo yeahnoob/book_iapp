@@ -40,6 +40,7 @@ fn main() {
         ("02", "01") => ch02::exercise_ch02_ex01(),
         ("03", "01") => ch03::exercise_ch03_ex01(),
         ("04", "01") => ch04::exercise_ch04_ex01(),
+        ("04", "02") => ch04::exercise_ch04_ex02(),
         ("05", "01") => ch05::exercise_ch05_ex01(),
         _ => println!("The exercise[{}] has not been done.", chapter_number),
     }
