@@ -1,5 +1,4 @@
 pub fn exercise_ch03_ex01() {
-
     const N_MAX: usize = 100;
 
     let mut pokerface = vec![false; N_MAX];
@@ -17,4 +16,3 @@ pub fn exercise_ch03_ex01() {
     }
     println!();
 }
-

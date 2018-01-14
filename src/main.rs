@@ -1,9 +1,7 @@
 // the main rock
 extern crate clap;
-// ch02
-extern crate rcalc;
 
-use clap::{Arg, App};
+use clap::{App, Arg};
 
 mod ch02;
 mod ch03;
@@ -14,22 +12,25 @@ fn exercise_ch01() {
     println!("Exercise in Chapter 01");
 }
 
-
 fn main() {
     let matches = App::new("Book IAPP's exercises")
         .version("0.1.0")
         .author("Xanadu Zhang <zgemlbox@gmail.com>")
         .about("Interesting Algorithms of Programmer's Puzzle")
-        .arg(Arg::with_name("chapter number")
-             .short("c")
-             .long("chapter")
-             .takes_value(true)
-             .help("Book Chapter Number"))
-        .arg(Arg::with_name("exercise number")
-             .short("e")
-             .long("exercise")
-             .takes_value(true)
-             .help("Exercise Number in One Chapter"))
+        .arg(
+            Arg::with_name("chapter number")
+                .short("c")
+                .long("chapter")
+                .takes_value(true)
+                .help("Book Chapter Number"),
+        )
+        .arg(
+            Arg::with_name("exercise number")
+                .short("e")
+                .long("exercise")
+                .takes_value(true)
+                .help("Exercise Number in One Chapter"),
+        )
         .get_matches();
     let chapter_number = matches.value_of("chapter number").unwrap_or("01");
     let exercise_number = matches.value_of("exercise number").unwrap_or("01");

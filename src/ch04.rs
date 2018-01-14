@@ -16,4 +16,3 @@ pub fn exercise_ch04_ex01() {
         println!("{}, {}", n_part, n_cut);
     }
 }
-
